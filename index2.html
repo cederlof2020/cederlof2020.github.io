@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script type="text/javascript">
+// PASSWORD PROTECTION SCRIPT
+
+function TheLogin() {
+
+var password = 'kennedy10';
+
+if (this.document.login.pass.value == password) {
+  top.location.href="index.html";
+}
+else {
+  window.alert("Incorrect password, please try again.");
+  }
+}
+
+</script>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cederlöf Bröllop 2020</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">CEDERLÖF 2020</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+  </nav>
+
+  
+  <!-- Header -->
+  <header class="login">
+<br><br><br><br><br><br><br><br><br> <br><br><br>
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center"> <br><br><br><br><br><br>
+        <div class="project-text w-0"> <h4 class="text-white"></h4>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+<input type="password" class="form-control" placeholder="Lösenord" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;" ><br> 
+<input type="button" class="btn btn-lg btn-primary btn-block text-uppercase" value="Logga in" size="17" onclick="javascript:TheLogin(this.form)">
+</form>
+</div>
+      </div>
+    </div>
+<br><br><br><br><br><br>    <br><br><br><br>
+  </header>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
+
+
+
