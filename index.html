@@ -2,6 +2,23 @@
 <html lang="en">
 
 <head>
+<script type="text/javascript">
+// PASSWORD PROTECTION SCRIPT
+
+function TheLogin() {
+
+var password = 'kennedy10';
+
+if (this.document.login.pass.value == password) {
+  top.location.href="index2.html";
+}
+else {
+  window.alert("Incorrect password, please try again.");
+  }
+}
+
+</script>
+
 
 
   <meta charset="utf-8">
@@ -34,445 +51,25 @@
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">INFORMATION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">BRÖLLOPSGÄNGET</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#overnatt">ÖVERNATTNING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#osa">OSA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">KONTAKT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </nav>
 
+  
   <!-- Header -->
-  <header class="masthead">
+  <header class="login">
+<br><br><br><br><br><br><br><br><br> <br><br><br>
     <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Cederlöf 2020</h1>
-        <a href="#osa" class="btn btn-primary js-scroll-trigger">Klicka här för att OSA</a>
+      <div class="mx-auto text-center"> <br><br><br><br><br><br>
+        <div class="project-text w-0"> <h4 class="text-white"></h4>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+<input type="password" class="form-control" placeholder="Lösenord" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;" ><br> 
+<input type="button" class="btn btn-lg btn-primary btn-block text-uppercase" value="Logga in" size="17" onclick="javascript:TheLogin(this.form)">
+</form>
+</div>
       </div>
     </div>
+<br><br><br><br><br><br>    <br><br><br><br>
   </header>
 
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/kyrka.jpeg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Vigsel</h4>
-                    <p class="text-white-50 mb-1"><b>Plats:</b> Turinge Kyrka, Nykvarn </p>
-                    <p class="text-white-50 mb-1"><b>När:</b> kl. 14:30, 5 september 2020 </p>
-                    <p class="text-white-50 mb-1"><b>Klädsel:</b> Kavaj </p>
-                    <p class="text-white-50 mb-1">Brudskål och mingel sker på Larssons Lada. Alla är välkomna att delta under dessa två event.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/lada2.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Festligheter</h4>
-                <p class="text-white-50 mb-1"><b>Plats:</b> <a href="http://www.larssonslada.se/hittahit">Larssons Lada</a>, Taxinge </p>
-                <p class="mb-0 text-white-50">Noah är vår ögonsten, men middagen och kvällen önskar vi dela med våra vuxna vänner - så även era små diamanter får stanna hemma. </p>
-                <p class="text-white-50 mb-1"></p>
-                <p class="text-white-50 mb-1">Ammande barn är självklart välkomna.  </p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-            <!-- Project three Row -->
-   <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/lada.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Praktisk information</h4>
-                    <p class="text-white-50 mb-1"><b>Tal & Spex:</b> Anmäles till Toastmadame <a class="js-scroll-trigger" href="#team">Marie</a></p>
-                    <p class="text-white-50 mb-1"><b>Övernattning:</b> Se separat information </p>
-                    <p class="text-white-50 mb-1"><b>Transport:</b>  </p>
-                    <p class="text-white-50 mb-1"><b>Presenter:</b> Er närvaro är vår gåva. Vill ni ge något ändå, så önskar vi ett bidrag till vår bröllopsresa </p>
-                    
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-
-<!-- Team Section -->
- <section id="team" class="projects-section bg-light">
-
-<!-- Page Content -->
-<div class="container">
-  <div class="row">
-    <!-- Team Member 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="img/tim2.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">   <a class="card-title mb-0" data-toggle="collapse" href="#collapseTim" role="button" aria-expanded="false" aria-controls="collapseExample"> Tim Ejdeskog </a> </h5>
-          <div class="card-text text-black-50">Bestman</div>
-          <div class="collapse" id="collapseTim">
-            <div >
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-    <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">   <a class="card-title mb-0" data-toggle="collapse" href="#collapseEmma" role="button" aria-expanded="false" aria-controls="collapseExample"> Emma Hansson </a> </h5>
-          <div class="card-text text-black-50">Brudtärna</div>
-          <div class="collapse" id="collapseEmma">
-            <div >
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team Member 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">   <a class="card-title mb-0" data-toggle="collapse" href="#collapseAnte" role="button" aria-expanded="false" aria-controls="collapseExample"> Andreas Baraona </a> </h5>
-          <div class="card-text text-black-50">Bestman</div>
-                    <div class="collapse" id="collapseAnte">
-            <div >
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team Member 4 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">   <a class="card-title mb-0" data-toggle="collapse" href="#collapseLinnea" role="button" aria-expanded="false" aria-controls="collapseExample"> Linnea Omark </a> </h5>
-          <div class="card-text text-black-50">Brudtärna</div>
-                    <div class="collapse" id="collapseLinnea">
-            <div >
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-</div>
-</section>
-
-
-
-
-<section id="overnatt" class="signup-section">
-  <div class="container">
-    <div class="row">
-      <!-- Free Tier -->
-      <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-            <h6 class="card-price text-center">Inkluderat<span class="period"></span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Trevlig stämning</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Vigsel, mingel, middag</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Fest</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Hänga med underbart folk</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Episkt pyjamasparty i sovsal</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Transport dagen efter till Stockholm</li>
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Plus Tier -->
-      <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-            <h6 class="card-price text-center">&asymp; 350SEK<span class="period"></span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Trevlig stämning</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Vigsel, mingel, middag</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Jädra fest</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Hänga med underbart folk</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Episkt pyjamasparty i sovsal</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Transport dagen efter till Stockholm</li>
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Pro Tier -->
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-            <h6 class="card-price text-center">&asymp; 500SEK<span class="period"></span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Trevlig stämning</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Vigsel, mingel, middag</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Jädra hejdundrande fest</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Hänga med underbart folk</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Episkt pyjamasparty i sovsal</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Transport dagen efter till Stockholm</li>
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Projects Section -->
-  <section id="osa" class="projects-section bg-light">
-    <div class="container">
-
-<form>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Namn</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="namn" placeholder="För- & Efternamn">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">E-mail</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputPassword3" placeholder="E-mailadress">
-    </div>
-  </div>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">OSA</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Jag kommer, jag kommer, jag är nästan där!
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Jag har tyvärr andra mycket tråkigare saker planerat...
-          </label>
-        </div>
-        <div class="form-check disabled">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-          <label class="form-check-label" for="gridRadios3">
-            Jag gifter mig också just denna dag
-          </label>
-        </div>
-      </div>
-    </div>
-  </fieldset>
-  <div class="form-group row">
-    <div class="col-sm-2">Allergier eller annat avvikande beteende</div>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Laktos 
-        </label>
-      </div>
-        
-          <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Mjölkprotein
-        </label>
-      </div>
-        
-            <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Gluten
-        </label>
-      </div>
-
-            <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Nötter
-        </label>
-      </div>
-
-          <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Paprika (Johanna H)
-        </label>
-      </div>
-
-          <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Avocado (Jonas F)
-        </label>
-      </div>
-
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Vegetarian
-        </label>
-      </div>
-
-          <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1" disabled>
-        <label class="form-check-label" for="gridCheck1">
-          Vegan
-        </label>
-      </div>
-
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Till den här låten kan jag inte stå still</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="namn" placeholder="Artist - Låttitel">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
-    <div class="col-sm-10">
-     För övriga spörsmål eller andra funderingar maila <a href="mailto:cederlof2020@gmail.com"> cederlof2020@gmail.com </a>
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Skicka OSA</button>
-    </div>
-  </div>
-</form>
-
-<script src="https://www.powr.io/powr.js?platform=bootstrap"></script><div class="powr-rsvp-form" id="7e4dde5b_1571516306"></div>
-</div>
-    </div>
-  </section>
-
-
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section bg-black">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-
-
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Cederlöf 2020
-    </div>
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -487,8 +84,6 @@
 </body>
 
 </html>
-
-
 
 
 
