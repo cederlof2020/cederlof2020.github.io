@@ -1,6 +1,6 @@
 <?php
 
-$to = "din_egen@e-postadress_här";
+$to = "cederlof2020@gmail.com";
 $from = $_POST["email"];
 $subject = 'Kontakt från webbplatsen!';
 $fnamn = $_POST["fnamn"];
